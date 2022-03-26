@@ -40,7 +40,7 @@ export default function Home({ product }: HomeProps) {
 //Como a home e uma page que vai ser vista por muitos user da mesma forma
 //usar o getStaticPros para gerar a page statica a cada 24hrs
 export const getStaticProps: GetStaticProps= async () => {
-  const price = await stripe.prices.retrieve('price_1KS2mTGTTNnucwVN0QbxPaeu', {
+  const price = await stripe.prices.retrieve('price_1KgpodGTTNnucwVNoQosbcZj', {
     expand: ['product']
   })
 
